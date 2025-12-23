@@ -16,8 +16,7 @@ Explore trends and patterns using visualizations
 Train machine learning models for price prediction
 
 Evaluate performance with standard metrics
-
-(Optional) Visualize predictions vs. actual values
+ Visualize predictions vs. actual values
 
 📂 Repository Structure
 📦 Stock_Market_Prediction
