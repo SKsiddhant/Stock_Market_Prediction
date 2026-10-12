@@ -1,0 +1,14 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # The pure-helper tests need only numpy/pandas; the heavy model tests skip themselves if
+      # TensorFlow/Prophet are missing. Install them too if you want the full pipeline checked.
+      - run: pip install pytest numpy pandas
+      - run: python -m pytest -q tests/test_forecast_utils.py
