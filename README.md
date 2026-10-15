@@ -28,4 +28,4 @@ python -m pytest
 
 Pure helpers (windowing, hold-out split, business-day dates, RMSE) are in `forecast_utils.py` and are tested without any network. The pipeline and app tests run the real LSTM/ARIMA/Prophet on synthetic prices with one epoch; they are skipped automatically if TensorFlow/Prophet are not installed.
 
-`AAPL_stock.csv` is an old snapshot of downloaded data; the app does not read it (it always downloads fresh prices).
+The old `AAPL_stock.csv` snapshot was removed from the repo (375 KB, never read by the app, which always downloads fresh prices); it is still in the history on `main`.
