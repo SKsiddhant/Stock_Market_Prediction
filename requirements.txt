@@ -1,0 +1,9 @@
+streamlit>=1.50
+yfinance>=0.2.54
+pandas>=2.1
+numpy
+scikit-learn
+matplotlib
+statsmodels
+prophet
+tensorflow>=2.16
